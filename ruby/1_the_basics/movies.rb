@@ -3,7 +3,7 @@ movies = {:"The Matrix" => 1999, :"Kill Bill" => 2000}
 puts movies[:"The Matrix"]
 puts movies[:"Kill Bill"]
 
-# new syntax - it works somehow
+# new syntax - it works somehow - because they are symbols
 
 movies2 = {"The Matrix": 1999, "Kill Bill": 2000}
 
