@@ -1,5 +1,9 @@
 # name.rb
 
-puts "Enter your name:"
-name = gets.chomp
-puts "Hello, #{name}!"
+puts "Enter your firstname:"
+firstname = gets.chomp
+puts "Enter your lastname:"
+lastname = gets.chomp
+
+puts "Hello, #{firstname + ' ' + lastname}!"
+10.times { puts firstname + ' ' + lastname }
