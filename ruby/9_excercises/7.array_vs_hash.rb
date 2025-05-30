@@ -1,0 +1,1 @@
+# hashes have keys and values, while arrays have only values and ordered by index.
