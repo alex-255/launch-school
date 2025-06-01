@@ -1,5 +1,5 @@
 numbers = []
-5.times do
+while numbers.length < 5 do
   numbers << rand(100)
 end
 
