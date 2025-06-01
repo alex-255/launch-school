@@ -8,3 +8,9 @@ while new_numbers.length <= 5
 end
 
 puts "Here are 5 random numbers: #{new_numbers}"
+
+# or
+# numbers = []
+# 5.times do
+#   numbers << rand(100)
+# end
