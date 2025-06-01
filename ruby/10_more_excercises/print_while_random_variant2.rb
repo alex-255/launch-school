@@ -1,6 +1,10 @@
 numbers = []
 while numbers.length < 5 do
-  numbers << rand(100)
+  number = rand(100)
+
+  unless numbers.include?(number)
+    numbers << number
+    puts number
+  end
 end
 
-puts "Here are 5 random numbers: #{numbers}"
