@@ -6,3 +6,11 @@ loop do
   end
   puts number
 end
+
+loop do
+  number = rand(100)
+  if number.between?(0, 10)
+    break
+  end
+  puts number
+end
