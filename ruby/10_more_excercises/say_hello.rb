@@ -1,6 +1,15 @@
-say_hello = 0
+counter = 0
 
-while say_hello < 5
+while counter < 5
   puts 'Hello!'
-  say_hello += 1
+  counter += 1
 end
+
+# or
+
+5.times do
+  puts 'Hello!'
+end
+
+# or
+5.times { puts 'Hello!' }
