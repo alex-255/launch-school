@@ -1,10 +1,10 @@
 process_the_loop = [true, false].sample
 
-loop do
-  if process_the_loop
+if process_the_loop
+  loop do
     puts "The loop was processed!"
-  else
-    puts "The loop wasn't processed!"
+    break
   end
-  break
+else
+  puts "The loop wasn't processed!"
 end
