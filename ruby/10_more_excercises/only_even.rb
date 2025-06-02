@@ -2,8 +2,6 @@ number = 0
 
 until number == 10
   number += 1
-  if number.odd?
-    next
-  end
+  next if number.odd?
   puts number
 end
