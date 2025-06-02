@@ -1,15 +1,15 @@
 # login.rb
 
-NAME = "admin"
+USERNAME = "admin"
 PASSWORD = "SecreT"
 
 loop do
   puts ">> Please enter user name:"
-  name = gets.chomp
+  username = gets.chomp
   puts ">> Please enter your password:"
   password = gets.chomp
 
-  if name == NAME && password == PASSWORD
+  if username == USERNAME && password == PASSWORD
     puts "Welcome!"
     break
   else
