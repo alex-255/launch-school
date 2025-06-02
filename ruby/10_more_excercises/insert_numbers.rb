@@ -4,9 +4,7 @@ loop do
   puts 'Enter any number:'
   input = gets.chomp.to_i
 
-  if numbers.size >= 5
-    break
-  end
+  break if numbers.size >= 5
   
   numbers << input
 end
