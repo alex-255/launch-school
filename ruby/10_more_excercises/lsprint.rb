@@ -1,6 +1,6 @@
 loop do
   puts ">> How many output lines do you want? Enter a number >= 3:"
-  input = gets.chomp.to_i
+  INPUT = gets.to_i # or gets.chomp.to_i chomp is not necessary here
 
   unless input >= 3
     puts ">> That's not enough lines."
