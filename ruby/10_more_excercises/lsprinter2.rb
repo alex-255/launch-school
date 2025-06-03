@@ -1,6 +1,6 @@
 loop do
   number_of_lines = nil
-  response = ''
+  response = nil
 
   loop do
     puts '>> How many output lines do you want? Enter a number >= 3 (Q to quit):'
