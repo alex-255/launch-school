@@ -1,3 +1,3 @@
 name = 'Roger'
-p name.downcase == 'roger'
-p name.downcase == 'DAVE'
+puts name.downcase == 'DAVE'.downcase
+puts name.downcase == 'RoGeR'.downcase
