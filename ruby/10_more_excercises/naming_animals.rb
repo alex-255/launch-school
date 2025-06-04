@@ -1,9 +1,9 @@
 def dog(name)
-  return name
+  name
 end
 
 def cat(name)
-  return name
+  name
 end
 
 puts "The dog's name is #{dog('Spot')}."
