@@ -1,8 +1,8 @@
-def add(a, b)
-  a + b
+def add(num1, num2)
+  num1 + num2
 end
-def multiply(a, b)
-  a * b
+def multiply(num1, num2)
+  num1 * num2
 end
 
 puts add(2, 2) == 4
