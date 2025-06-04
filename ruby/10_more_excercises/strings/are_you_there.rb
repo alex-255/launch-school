@@ -1,4 +1,4 @@
 colors = 'blue pink yellow orange'
 
-puts colors.include?('yellow') ? true : false
-puts colors.include?('purple') ? true : false
+puts colors.include?('yellow') # returns true
+puts colors.include?('purple') # returns false
