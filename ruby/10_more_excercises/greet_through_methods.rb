@@ -7,7 +7,7 @@ def world
 end
 
 def greet
-  puts "#{hello} #{world}"
+  "#{hello} #{world}"
 end
 
-greet
+puts greet
