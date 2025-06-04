@@ -1,9 +1,9 @@
 status = ['awake', 'tired'].sample
 
 if status == 'tired'
-  result = "Go to sleep!"
+  message = "Go to sleep!"
 else
-  result = "Be productive!"
+  message = "Be productive!"
 end
 
-puts result
+puts message
