@@ -6,9 +6,9 @@ number1 = nil
 number2 = nil
 
 loop do
-  puts ">> Please enter the first number (non-zero integer):"
+  puts ">> Please enter a positive or negative integer:"
   string1 = gets.chomp
-  puts ">> Please enter the second number (non-zero integer):"
+  puts ">> Please enter a positive or negative integer:"
   string2 = gets.chomp
   if valid_number?(string1) && valid_number?(string2)
     number1 = string1.to_i
@@ -17,6 +17,7 @@ loop do
       break
     else
       puts ">> Sorry. One integer must be positive, one must be negative."
+      puts ">> Please start over."
     end
   else
     puts ">> Invalid input! Only non-zero integers are allowed."
