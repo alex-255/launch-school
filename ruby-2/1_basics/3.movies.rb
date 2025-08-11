@@ -5,7 +5,7 @@ movies = {
   "Pulp Fiction" => 1994
 }
 
-movies.each do |title, year|
+movies.each_value do |year|
   puts year
 end
 
