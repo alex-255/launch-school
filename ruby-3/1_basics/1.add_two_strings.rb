@@ -1,0 +1,1 @@
+puts "MyName" + " is " + "Alex"
