@@ -1,4 +1,4 @@
 prng = Random.new
-taddy_years = prng.rand(20..200)
+teddy_years = prng.rand(20..200)
 
-puts "Taddy is #{taddy_years} years old!"
+puts "Teddy is #{teddy_years} years old!"
