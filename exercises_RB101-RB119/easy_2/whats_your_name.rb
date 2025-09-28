@@ -6,7 +6,7 @@ def greeting(name)
   if is_screaming?(name)
     puts "HELLO #{name.chop.upcase}. WHY ARE WE SCREAMING?"
   else
-    puts "Hello #{name}!"
+    puts "Hello #{name}."
   end
 end
 
