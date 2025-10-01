@@ -1,9 +1,9 @@
-def century(year)
+def count_century(year)
   (year / 100.0).ceil
 end
 
-def print_century(year)
-  century_number = century(year)
+def century(year)
+  century_number = count_century(year)
   suffix = case century_number % 10
            when 1 then 'st'
            when 2 then 'nd'
@@ -16,15 +16,15 @@ def print_century(year)
     suffix = 'th'
   end
 
-  puts "#{century_number}#{suffix}"
+  "#{century_number}#{suffix}"
 end
 
-print_century(2000) # => "20th"
-print_century(2001) # => "21st"
-print_century(1965) # => "20th"
-print_century(256)  # => "3rd"
-print_century(5)    # => "1st"
-print_century(10103) # => "102nd"
-print_century(1052) # => "11th"
-print_century(1127) # => "12th"
-print_century(11201) # => "113th"
+puts century(2000) # => "20th"
+puts century(2001) # => "21st"
+puts century(1965) # => "20th"
+puts century(256)  # => "3rd"
+puts century(5)    # => "1st"
+puts century(10103) # => "102nd"
+puts century(1052) # => "11th"
+puts century(1127) # => "12th"
+puts century(11201) # => "113th"
