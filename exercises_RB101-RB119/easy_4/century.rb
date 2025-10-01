@@ -3,8 +3,8 @@ def century_number(year)
 end
 
 def century(year)
-  century_number = century_number(year)
-  suffix = case century_number % 10
+  number = century_number(year)
+  suffix = case number % 10
            when 1 then 'st'
            when 2 then 'nd'
            when 3 then 'rd'
@@ -12,9 +12,9 @@ def century(year)
            end
 
   # Handle special cases for 11th, 12th, 13th (also 111, 112, 113, etc.)
-  if (11..13).include?(century_number % 100)
+  if (11..13).include?(number % 100)
     suffix = 'th'
   end
 
-  "#{century_number}#{suffix}"
+  "#{number}#{suffix}"
 end
