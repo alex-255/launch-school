@@ -6,6 +6,6 @@ second_number = gets.chomp.to_i
 puts "==> #{first_number} + #{second_number} = #{first_number + second_number}"
 puts "==> #{first_number} - #{second_number} = #{first_number - second_number}"
 puts "==> #{first_number} * #{second_number} = #{first_number * second_number}"
-puts "==> #{first_number} / #{second_number} = #{first_number / second_number}"
+puts "==> #{first_number} / #{second_number} = #{second_number.zero? ? "zero division error" : first_number / second_number}"
 puts "==> #{first_number} % #{second_number} = #{first_number % second_number}"
 puts "==> #{first_number} ** #{second_number} = #{first_number**second_number}"
