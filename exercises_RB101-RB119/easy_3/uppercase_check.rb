@@ -1,10 +1,10 @@
-def upcased?(string)
+def uppercased?(string)
   string == string.upcase
 end
 
-puts upcased?('t') == false
-puts upcased?('T') == true
-puts upcased?('Four Score') == false
-puts upcased?('FOUR SCORE') == true
-puts upcased?('4SCORE!') == true
-puts upcased?('') == true
+puts uppercased?('t') == false
+puts uppercased?('T') == true
+puts uppercased?('Four Score') == false
+puts uppercased?('FOUR SCORE') == true
+puts uppercased?('4SCORE!') == true
+puts uppercased?('') == true
