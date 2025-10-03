@@ -1,9 +1,16 @@
 def string_to_integer(string)
-  str_digits = string.split("")
+  str_digits = string.chars
   int_digits = str_digits.map { |char| char.ord - "0".ord }
   value = 0
   int_digits.each { |digit| value = 10 * value + digit }
   value
+end
+
+# version using reduce
+def string_to_integer(string)
+  str_digits = string.chars
+  int_digits = str_digits.map { |char| char.ord - "0".ord }
+  int_digits.reduce(0) { |value, digit| 10 * value + digit }
 end
 
 puts string_to_integer('4321') == 4321
