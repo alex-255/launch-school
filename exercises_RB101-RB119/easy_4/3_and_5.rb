@@ -1,6 +1,10 @@
+def multiple_of_3_or_5?(number)
+  number % 3 == 0 || number % 5 == 0
+end
+
 def multisum(number)
   (1..number).reduce(0) do |sum, n| 
-    (n % 3 == 0 || n % 5 == 0) ? sum + n : sum 
+    multiple_of_3_or_5?(n) ? sum + n : sum
   end
 end
 
