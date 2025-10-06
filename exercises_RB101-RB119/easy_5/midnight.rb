@@ -2,11 +2,9 @@ MINUTES_PER_DAY = 1440
 
 def time_of_day(delta_minutes)
   
-  if delta_minutes == 0 || delta_minutes % MINUTES_PER_DAY == 0
-    return "00:00"
-  elsif delta_minutes < 0
+  if delta_minutes < 0
     delta_minutes = (MINUTES_PER_DAY + delta_minutes) % MINUTES_PER_DAY
-  elsif delta_minutes > 0
+  elsif delta_minutes >= 0
     delta_minutes = delta_minutes % MINUTES_PER_DAY
   end
 
