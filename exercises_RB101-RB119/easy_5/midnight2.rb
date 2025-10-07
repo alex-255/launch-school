@@ -2,7 +2,7 @@ def minutes_before_midnight(time)
   hours_and_minutes = time.split(':')
   hours = hours_and_minutes[0].to_i
   minutes = hours_and_minutes[1].to_i
-  (hours * 60 + minutes) - 1440
+  1440 - (hours * 60 + minutes)
 end
 
 def minutes_after_midnight(time)
