@@ -2,7 +2,7 @@ def swap_letters(word)
   if word.length > 1
     first_letter = word[0]
     last_letter = word[-1]
-    middle = word[1..-2]
+    middle = word[1..-2] || ''
     last_letter + middle + first_letter
   else
     word
