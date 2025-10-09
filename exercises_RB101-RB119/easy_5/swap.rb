@@ -10,16 +10,14 @@ def swap_letters(word)
 end
 
 def swap_words(string)
-  words = string.split
-  new_words = words.map do |word|
-    swap_letters(word)
-  end
-  new_words.join(' ')
+    parts = string.split(/(\s+)/)        # keeps spaces as separate tokens
+    parts.map! { |t| t =~ /\s+/ ? t : swap_letters(t) }
+    parts.join
 end
 
 p swap_words('Oh what a wonderful day it is')
 p swap_words('Abcde')
 p swap_words('a')
-p swap_words('a A')
-p swap_words(' ').length
+p swap_words('a  A')
+p swap_words(' ')
 p swap_words('a bc def ghij')
