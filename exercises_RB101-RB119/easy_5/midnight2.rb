@@ -1,15 +1,17 @@
+MINUTES_PER_DAY = 1440
+
 def minutes_before_midnight(time)
   hours_and_minutes = time.split(':')
   hours = hours_and_minutes[0].to_i
   minutes = hours_and_minutes[1].to_i
-  (1440 - (hours * 60 + minutes)) % 1440
+  (1440 - (hours * 60 + minutes)) % MINUTES_PER_DAY
 end
 
 def minutes_after_midnight(time)
   hours_and_minutes = time.split(':')
   hours = hours_and_minutes[0].to_i
   minutes = hours_and_minutes[1].to_i
-  hours * 60 + minutes
+  (hours * 60 + minutes) % MINUTES_PER_DAY
 end
 
 p minutes_after_midnight("10:10")
