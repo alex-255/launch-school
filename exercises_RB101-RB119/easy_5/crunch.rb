@@ -13,7 +13,7 @@ def crunch(string)
       new_array.push(char)
     end
   end
-  new_array
+  new_array.join
 end
 
 p crunch('ddaaiillyy ddoouubbllee') #== 'daily double'
