@@ -1,5 +1,5 @@
 def list_of_digits(number)
-  array = number.to_s.split('')
+  array = number.to_s.chars
   array.map { |digit| digit.to_i }
 end
 
