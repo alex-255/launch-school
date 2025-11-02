@@ -1,4 +1,4 @@
-def fibonacci(n)
+def find_fibonacci_index_by_length(n)
   first = 1
   last = 1 
   index = 2
@@ -12,9 +12,9 @@ def fibonacci(n)
   index
 end
 
-puts fibonacci(2)
-puts fibonacci(3)
-puts fibonacci(10)
-puts fibonacci(100)
-puts fibonacci(1000)
-puts fibonacci(10000)
+puts find_fibonacci_index_by_length(2)
+puts find_fibonacci_index_by_length(3)
+puts find_fibonacci_index_by_length(10)
+puts find_fibonacci_index_by_length(100)
+puts find_fibonacci_index_by_length(1000)
+puts find_fibonacci_index_by_length(10000)
