@@ -2,11 +2,12 @@ def fibonacci(n)
   first = 1
   last = 1 
   index = 2
-  while last.to_s.length < n
+  loop do
     fibonacci = first + last
     first = last
     last = fibonacci
     index += 1
+    last.to_s.length < n ? next : break
   end
   index
 end
