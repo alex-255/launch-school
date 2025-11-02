@@ -1,9 +1,7 @@
 def find_dup(array)
-  item = nil
-  array.select do |element|
-    array.count(element) > 1 ? item = element : nil
+  array.find do |element|
+    array.count(element) > 1 
   end
-  item
 end
 
 p find_dup([1, 5, 3, 1]) == 1
@@ -14,5 +12,5 @@ p find_dup([18, 9, 36, 96, 31, 19, 54, 75, 42, 15,
              84, 73, 32, 43, 39, 80, 21, 62, 55, 6, 70, 64,
              85, 87, 88, 12, 33, 83, 82, 22, 40, 4, 26, 94, 41, 66,
              60, 71, 86, 79, 72, 20, 57, 34, 50, 74, 44, 56, 13,
-             23, 51, 24, 18, 68, 67, 58, 5, 9, 28, 45, 11, 17, 47,
+             23, 51, 24, 68, 67, 58, 28, 45, 11, 17, 47,
              35, 3, 2, 98, 42]) == 42
