@@ -1,10 +1,8 @@
 def leading_substrings(string)
-  result = []
   length = string.length
-  (1..length).map do |len|
-    result << string.slice(0, len)
+  result = (1..length).map do |len|
+    string.slice(0, len)
   end
-  result
 end
 
 p leading_substrings('abc') == ['a', 'ab', 'abc']
