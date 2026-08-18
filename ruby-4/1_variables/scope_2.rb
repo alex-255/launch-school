@@ -1,5 +1,7 @@
 # scope.rb
 
+
+
 a = 5
 
 3.times do |n|    # method invocation with a block
