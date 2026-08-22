@@ -1,0 +1,1 @@
+# Exception handling doing with errors. No stop executing a program, but replacing the error and stop with rescue code.
