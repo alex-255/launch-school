@@ -1,6 +1,8 @@
 class GoodDog
   @@number_of_dogs = 0
 
+  # puts self
+
   def initialize
     @@number_of_dogs += 1
   end
